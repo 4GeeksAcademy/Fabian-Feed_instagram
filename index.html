@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/ffa2472869.js" crossorigin="anonymous"> </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>instagram Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="Navbar">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid" style="padding-left:10px ; padding-right: 10px;">
+        <a class="navbar-brand" href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Logo" width="30" height="30"
+            class="d-inline-block align-text-top">
+          Instagram
+        </a>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" width="50 ">
+          <div class="Newpost">
+
+
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create new post
+            </button>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1"
+                        placeholder="Add the caption of your post here." rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <button type="button" class="btn btn-light border "><i class="fa-solid fa-camera fw-bold">
+                        </i></button>
+                      <button type="button" class=" btn btn-light  border "><i class="fa-solid fa-location-dot fw-bold">
+                        </i></button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">
+                  <p class="text-danger">Log out</p>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- pills -->
+  <div class="navtabsbody ">
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <!-- grid -->
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="row">
+          <div class="col " style="padding: 6px 3px 3px 6px;">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://cdn.media.amplience.net/i/metallica/2022-07jul06_Madrid-Spain_Brett-Murray_016"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="Madcool">
+            </div>
+
+          </div>
+          <div class="col" style="padding: 6px 3px 3px 3px;">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://i.pinimg.com/564x/5b/10/0f/5b100f5e133b36b8222045cf9cc83cbf.jpg"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="San Francisco">
+            </div>
+          </div>
+          <div class="col" style="padding: 6px 6px 3px 3px;">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://i.pinimg.com/564x/e6/e2/8f/e6e28f1ff98a3e9f8e3788dab9dc8e45.jpg"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="gog">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" style="padding: 3px 3px 3px 6px;">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://i.pinimg.com/564x/55/37/f9/5537f9819be0b4062930d7aad05f1015.jpg"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="Mustang">
+            </div>
+          </div>
+          <div class="col" style="padding: 3px ">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://cdn.media.amplience.net/i/metallica/Metallica_Group_72Seasons_Tim-Saccenti_05"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="72seasons">
+            </div>
+          </div>
+          <div class="col" style="padding: 3px 6px 3px 3px;">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://i.pinimg.com/564x/1a/15/78/1a157871032d27960ff88f91edb6929c.jpg"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="Bron">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" style="padding: 3px 3px 3px 6px;">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://i.pinimg.com/736x/18/03/8b/18038bf3c6b12295caa0d6b34506c3b4.jpg"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="miles">
+            </div>
+          </div>
+          <div class="col" style="padding:  3px;">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://i.pinimg.com/564x/5d/fb/01/5dfb017931e5523ad15e4f78b37689f0.jpg"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="mar">
+            </div>
+          </div>
+          <div class="col" style="padding: 3px 6px 3px 3px;">
+            <div class="container-fluid  padding: none;"
+              style="height: 35rem; width: 35rem; overflow: hidden; padding: 0;">
+              <img src="https://i.pinimg.com/564x/4e/25/80/4e2580d67ef0011b97d62c64749986d0.jpg"
+                class="border border-0 img-thumbnail" style="height: 100%; width: 100%; object-fit: cover; padding: 0;"
+                alt="astronaut">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feed -->
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="photofeed ">
+        <div class="d-flex flex-column  mb-3 ">
+          <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px; ">
+            <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+              <div class="header-card d-flex justify-content-between">
+                <h1> perfect photo </h1>
+                <p> 10/12 </p>
+              </div>
+              <div class="container-fluid border padding: none;"
+                style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                <img src="https://cdn.media.amplience.net/i/metallica/2022-07jul06_Madrid-Spain_Brett-Murray_016"
+                  style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+              </div>
+              <div class="card-body">
+                <h6 class="likes fw-bold">550 likes</h6>
+                <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+              </div>
+            </div>
+          </div>
+          <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px;">
+            <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+              <div class="header-card d-flex justify-content-between">
+                <h1>San Francisco...!!</h1>
+                <p> 20/15 </p>
+              </div>
+              <div class="container-fluid border padding: none;"
+                style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                <img src="https://i.pinimg.com/564x/5b/10/0f/5b100f5e133b36b8222045cf9cc83cbf.jpg"
+                  style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+              </div>
+              <div class="card-body">
+                <h6 class="likes fw-bold">350 likes</h6>
+                <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+              </div>
+            </div>
+            <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px;">
+              <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+                <div class="header-card d-flex justify-content-between">
+                  <h1> Ragnarok </h1>
+                  <p> 20/15 </p>
+                </div>
+                <div class="container-fluid border padding: none;"
+                  style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                  <img src="https://i.pinimg.com/564x/e6/e2/8f/e6e28f1ff98a3e9f8e3788dab9dc8e45.jpg"
+                    style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+                </div>
+                <div class="card-body">
+                  <h6 class="likes fw-bold">180 likes</h6>
+                  <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+                </div>
+              </div>
+              <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px;">
+                <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+                  <div class="header-card d-flex justify-content-between">
+                    <h1> Mustang and chill </h1>
+                    <p> 22/14 </p>
+                  </div>
+                  <div class="container-fluid border padding: none;"
+                    style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                    <img src="https://i.pinimg.com/564x/55/37/f9/5537f9819be0b4062930d7aad05f1015.jpg"
+                      style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="likes fw-bold">190 likes</h6>
+                    <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+                  </div>
+                </div>
+                <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px;">
+                  <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+                    <div class="header-card d-flex justify-content-between">
+                      <h1> 72 seasons </h1>
+                      <p> 15/12 </p>
+                    </div>
+                    <div class="container-fluid border padding: none;"
+                      style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                      <img src="https://cdn.media.amplience.net/i/metallica/Metallica_Group_72Seasons_Tim-Saccenti_05"
+                        style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="likes fw-bold">750 likes</h6>
+                      <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px;">
+                  <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+                    <div class="header-card d-flex justify-content-between">
+                      <h1> King James</h1>
+                      <p> 07/15 </p>
+                    </div>
+                    <div class="container-fluid border padding: none;"
+                      style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                      <img src="https://i.pinimg.com/564x/1a/15/78/1a157871032d27960ff88f91edb6929c.jpg"
+                        style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="likes fw-bold">498 likes</h6>
+                      <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+                    </div>
+
+
+                  </div>
+                  <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px;">
+                    <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+                      <div class="header-card d-flex justify-content-between">
+                        <h1> Miles </h1>
+                        <p> 07/21 </p>
+                      </div>
+                      <div class="container-fluid border padding: none;"
+                        style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                        <img src="https://i.pinimg.com/736x/18/03/8b/18038bf3c6b12295caa0d6b34506c3b4.jpg"
+                          style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h6 class="likes fw-bold">354 likes</h6>
+                        <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px;">
+                    <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+                      <div class="header-card d-flex justify-content-between">
+                        <h1> Sea </h1>
+                        <p> 04/15 </p>
+                      </div>
+                      <div class="container-fluid border padding: none;"
+                        style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                        <img src="https://i.pinimg.com/564x/5d/fb/01/5dfb017931e5523ad15e4f78b37689f0.jpg"
+                          style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h6 class="likes fw-bold">180 likes</h6>
+                        <p class="card-text">This is an example of a very good photo that you can post on Instagram
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class=" card border border-0" style=" margin-top: 50px; margin-bottom: 25px;">
+                    <div class="container justify-content-center border rounded" style="width: 25rem; padding: 0;">
+                      <div class="header-card d-flex justify-content-between">
+                        <h1> See the stars </h1>
+                        <p> 19/12 </p>
+                      </div>
+
+                      <div class="container-fluid border padding: none;"
+                        style="height: 25rem; width: 100%; overflow: hidden; padding: 0;">
+                        <img src="https://i.pinimg.com/564x/4e/25/80/4e2580d67ef0011b97d62c64749986d0.jpg"
+                          style="height: 100%; width: 100%; object-fit: cover; padding: 0;" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h6 class="likes fw-bold">586 likes</h6>
+                        <p class="card-text"> This is an example of a very good photo that you can post on
+                          Instagram</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous">
+                    </script>
+</body>
+
+</html>
